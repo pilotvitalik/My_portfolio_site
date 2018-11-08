@@ -1,0 +1,98 @@
+@h4:1.2rem;
+@h6:0.9rem;
+
+.header{
+	width: 100%;
+	height: 200px;
+	background-image:url("../img/header_320_1_2.jpg");
+	background-size: cover;
+	text-align: center;
+	padding-top: 50px;
+	h2{
+		color: white;
+		margin: 0;
+	}
+	p{
+
+		color: white;
+	}
+}
+.common{
+	width: 100%;
+	height: auto;
+	text-align: center;
+	h4{
+		font-size: @h4;
+		color: blue;
+		margin-top: 5px;
+	}
+}
+.portfolio{
+	display: flex;
+	flex-direction: column;
+	width: 85%;
+	height: auto;
+	margin: 0 auto;
+	.my_site{
+		width: 100%;
+		height: auto;
+		.foto{
+			width: 100%;
+			height: 150px;
+			margin-bottom: 3px;
+			img{
+				width: 100%;
+				height: 100%;
+			}
+		}
+		.text{
+			width: 100%;
+			height: 50px;
+			h6{
+				font-size: @h6;
+				line-height: 1;
+				margin-bottom: 2px;
+			}
+			p{
+				font-size: 0.6rem;
+				line-height: 1.2;
+				}
+		}
+	}
+}
+/*Начало подвала*/
+.footer{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: auto;
+	background-color: rgb(0, 61, 153);
+}
+/*Название подвала*/
+.footer_name{
+	width: 80%;
+	height: auto;
+	margin: 0 auto;
+	border: solid 1px red;
+	h4{
+		font-size:@h4;
+	    color: rgb(51, 133, 255);
+	}
+	p{
+		font-size:@h6;
+	}
+}
+/*Социальные сети*/
+.social{
+	width: 80%;
+	height: auto;
+	margin: 0 auto;
+	border: solid 1px red;
+}
+/*Обратная связь*/
+.feedback{
+	width: 90%;
+	height: auto;
+	margin: 0 auto;
+	border: solid 1px red;
+}
