@@ -69,26 +69,105 @@
   width: 80%;
   height: auto;
   margin: 0 auto;
-  border: solid 1px red;
+  margin-top: 3px;
+  padding: 0;
 }
 .footer_name h4 {
   font-size: 1.2rem;
   color: #3385ff;
+  margin: 0;
+  text-align: center;
 }
 .footer_name p {
-  font-size: 0.9rem;
+  font-size: 0.6rem;
+  color: #3385ff;
+  margin: 0;
+  text-align: center;
 }
 /*Социальные сети*/
 .social {
   width: 80%;
   height: auto;
+  padding: 0;
   margin: 0 auto;
-  border: solid 1px red;
+  margin-top: 5px;
+  text-align: center;
+}
+.social p {
+  color: white;
+  font-size: 0.9rem;
+  margin: 0;
+}
+.social .social_button {
+  display: flex;
+  width: 90%;
+  height: auto;
+  padding: 0;
+  margin: 0 auto 0 6%;
+  justify-content: space-around;
+  align-items: center;
+}
+.social .social_button .social_vk {
+  background: #003d99 url(../img/social_icons_320.jpg) -65px -13px no-repeat;
+  border-radius: 35px;
+}
+.social .social_button .social_tw {
+  background: #003d99 url(../img/social_icons_320.jpg) -172px -12px no-repeat;
+  border-radius: 35px;
+}
+.social .social_button .social_fb {
+  background: #003d99 url(../img/social_icons_320.jpg) -119px -13px no-repeat;
+  border-radius: 35px;
+}
+.social .social_button .social_inst {
+  background: #003d99 url(../img/social_icons_320.jpg) -274px -12px no-repeat;
+  border-radius: 35px;
+}
+.social .social_button .social_yout {
+  background: #003d99 url(../img/social_icons_320.jpg) -170px -65px no-repeat;
+  border-radius: 35px;
+}
+.social_vk,
+.social_tw,
+.social_fb,
+.social_inst,
+.social_yout {
+  display: block;
+  width: 35px;
+  height: 35px;
+  margin: 0;
+  padding: 0;
 }
 /*Обратная связь*/
 .feedback {
   width: 90%;
   height: auto;
+  margin: 10px auto 0px auto;
+}
+.feedback .feedback_vk {
+  width: 64%;
+  height: auto;
   margin: 0 auto;
-  border: solid 1px red;
+}
+.feedback .feedback_vk input {
+  height: 40px;
+  border: solid 3px white;
+  border-radius: 30px;
+  background-color: #003d99;
+  color: white;
+  cursor: pointer;
+}
+.feedback .feedback_name {
+  width: 100%;
+  color: #3385ff;
+  font-size: 0.9rem;
+  margin-top: 3px;
+}
+.feedback .feedback_name p:first-child {
+  margin: 0;
+  text-align: center;
+}
+.feedback .feedback_name p:nth-child(2) {
+  margin: 0;
+  text-align: center;
 }

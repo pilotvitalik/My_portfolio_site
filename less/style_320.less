@@ -1,5 +1,8 @@
 @h4:1.2rem;
 @h6:0.9rem;
+@color_footer: rgb(0, 61, 153);
+@color_footername:rgb(51, 133, 255);
+@bdef:solid 1px red;
 
 .header{
 	width: 100%;
@@ -66,33 +69,112 @@
 	flex-direction: column;
 	width: 100%;
 	height: auto;
-	background-color: rgb(0, 61, 153);
+	background-color: @color_footer;
 }
 /*Название подвала*/
 .footer_name{
 	width: 80%;
 	height: auto;
 	margin: 0 auto;
-	border: solid 1px red;
+	margin-top: 3px;
+	padding: 0;
 	h4{
 		font-size:@h4;
 	    color: rgb(51, 133, 255);
+	    margin: 0;
+	    text-align: center;
 	}
 	p{
-		font-size:@h6;
+		font-size:0.6rem;
+		color: @color_footername;
+		margin: 0;
+		text-align: center;
 	}
 }
 /*Социальные сети*/
 .social{
 	width: 80%;
 	height: auto;
+	padding: 0;
 	margin: 0 auto;
-	border: solid 1px red;
+	margin-top: 5px;
+	text-align: center;
+	p{
+		color: white;
+		font-size: 0.9rem;
+		margin: 0;
+	}
+	.social_button{
+		display: flex;
+		width: 90%;
+		height: auto;
+		padding: 0;
+		margin: 0 auto 0 6%;
+		justify-content: space-around;
+		align-items: center;
+		.social_vk{
+			background: rgb(0, 61, 153) url(../img/social_icons_320.jpg) -65px -13px no-repeat;
+			border-radius: 35px;
+		}
+		.social_tw{
+			background: rgb(0, 61, 153) url(../img/social_icons_320.jpg) -172px -12px no-repeat;
+			border-radius: 35px;
+		}
+		.social_fb{
+			background: rgb(0, 61, 153) url(../img/social_icons_320.jpg) -119px -13px no-repeat;
+			border-radius: 35px;
+		}
+		.social_inst{
+			background: rgb(0, 61, 153) url(../img/social_icons_320.jpg) -274px -12px no-repeat;
+			border-radius: 35px;
+		}
+		.social_yout{
+			background: rgb(0, 61, 153) url(../img/social_icons_320.jpg) -170px -65px no-repeat;
+			border-radius: 35px;
+		}
+	}
+}
+.social_vk,
+.social_tw,
+.social_fb,
+.social_inst,
+.social_yout{
+	display: block;
+	width: 35px;
+	height: 35px;
+	margin: 0;
+	padding: 0;
 }
 /*Обратная связь*/
 .feedback{
 	width: 90%;
 	height: auto;
-	margin: 0 auto;
-	border: solid 1px red;
+	margin: 10px auto 0px auto;
+	.feedback_vk{
+		width: 64%;
+		height: auto;
+		margin: 0 auto;
+		input{
+			height: 40px;
+			border: solid 3px white;
+			border-radius: 30px;
+			background-color: @color_footer;
+			color: white;
+			cursor: pointer;
+		}
+	}
+	.feedback_name{
+		width: 100%;
+		color: @color_footername;
+		font-size: 0.9rem;
+		margin-top: 3px;
+		p:first-child{
+			margin: 0;
+			text-align: center;
+		}
+		p:nth-child(2){
+			margin: 0;
+			text-align: center;
+		}
+	}
 }
