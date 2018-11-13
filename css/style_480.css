@@ -1,10 +1,13 @@
 .header {
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  height: 200px;
-  background-image: url("../img/header_320_1_2.jpg");
+  height: 300px;
+  background-image: url("../img/header_480_1.jpg");
   background-size: cover;
-  text-align: center;
-  padding-top: 50px;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
 }
 .header h2 {
   color: white;
@@ -19,9 +22,9 @@
   text-align: center;
 }
 .common h4 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: blue;
-  margin-top: 5px;
+  margin-top: 9.333333333px;
 }
 .portfolio {
   display: flex;
@@ -36,7 +39,7 @@
 }
 .portfolio .my_site .foto {
   width: 100%;
-  height: 150px;
+  height: 224.99976px;
   margin-bottom: 3px;
 }
 .portfolio .my_site .foto img {
@@ -45,16 +48,16 @@
 }
 .portfolio .my_site .text {
   width: 100%;
-  height: 50px;
+  height: 65px;
 }
 .portfolio .my_site .text h6 {
-  font-size: 0.9rem;
-  line-height: 1;
-  margin-bottom: 2px;
+  font-size: 1.125rem;
+  line-height: 1.25;
+  margin-bottom: 3.7334px;
 }
 .portfolio .my_site .text p {
-  font-size: 0.6rem;
-  line-height: 1.2;
+  font-size: 0.75rem;
+  line-height: 1.5;
 }
 /*Начало подвала*/
 .footer {
@@ -69,17 +72,17 @@
   width: 80%;
   height: auto;
   margin: 0 auto;
-  margin-top: 3px;
+  margin-top: 5.6001px;
   padding: 0;
 }
 .footer_name h4 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: #3385ff;
   margin: 0;
   text-align: center;
 }
 .footer_name p {
-  font-size: 0.6rem;
+  font-size: 0.75rem;
   color: #3385ff;
   margin: 0;
   text-align: center;
@@ -90,12 +93,12 @@
   height: auto;
   padding: 0;
   margin: 0 auto;
-  margin-top: 15px;
+  margin-top: 28px;
   text-align: center;
 }
 .social p {
   color: white;
-  font-size: 0.9rem;
+  font-size: 1.125rem;
   margin: 0;
 }
 .social .social_button {
@@ -108,24 +111,24 @@
   align-items: center;
 }
 .social .social_button .social_vk {
-  background: #003d99 url(../img/social_icons_320.jpg) -65px -13px no-repeat;
-  border-radius: 35px;
+  background: #003d99 url(../img/social_icons_480.jpg) -80px -14px no-repeat;
+  border-radius: 41px;
 }
 .social .social_button .social_tw {
-  background: #003d99 url(../img/social_icons_320.jpg) -172px -12px no-repeat;
-  border-radius: 35px;
+  background: #003d99 url(../img/social_icons_480.jpg) -206px -12px no-repeat;
+  border-radius: 41px;
 }
 .social .social_button .social_fb {
-  background: #003d99 url(../img/social_icons_320.jpg) -119px -13px no-repeat;
-  border-radius: 35px;
+  background: #003d99 url(../img/social_icons_480.jpg) -142px -14px no-repeat;
+  border-radius: 41px;
 }
 .social .social_button .social_inst {
-  background: #003d99 url(../img/social_icons_320.jpg) -274px -12px no-repeat;
-  border-radius: 35px;
+  background: #003d99 url(../img/social_icons_480.jpg) -333px -14px no-repeat;
+  border-radius: 41px;
 }
 .social .social_button .social_yout {
-  background: #003d99 url(../img/social_icons_320.jpg) -170px -65px no-repeat;
-  border-radius: 35px;
+  background: #003d99 url(../img/social_icons_480.jpg) -206px -79px no-repeat;
+  border-radius: 41px;
 }
 .social_vk,
 .social_tw,
@@ -133,8 +136,8 @@
 .social_inst,
 .social_yout {
   display: block;
-  width: 35px;
-  height: 35px;
+  width: 41px;
+  height: 41px;
   margin: 0;
   padding: 0;
 }
@@ -142,10 +145,10 @@
 .feedback {
   width: 90%;
   height: auto;
-  margin: 15px auto 0px auto;
+  margin: 28px auto 0px auto;
 }
 .feedback .feedback_vk {
-  width: 64%;
+  width: 46.5%;
   height: auto;
   margin: 0 auto;
 }
@@ -155,12 +158,13 @@
   border-radius: 30px;
   background-color: #003d99;
   color: white;
+  font-size: 1.125rem;
   cursor: pointer;
 }
 .feedback .feedback_name {
   width: 100%;
   color: #3385ff;
-  font-size: 0.9rem;
+  font-size: 1.125rem;
   margin-top: 3px;
 }
 .feedback .feedback_name p:first-child {
