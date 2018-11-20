@@ -145,7 +145,7 @@
   margin: 15px auto 0px auto;
 }
 .feedback .feedback_vk {
-  width: 64%;
+  width: 61.5%;
   height: auto;
   margin: 0 auto;
 }
@@ -160,7 +160,7 @@
 .feedback .feedback_name {
   width: 100%;
   color: #3385ff;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   margin-top: 3px;
 }
 .feedback .feedback_name p:first-child {

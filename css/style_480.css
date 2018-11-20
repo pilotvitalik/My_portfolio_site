@@ -15,6 +15,7 @@
 }
 .header p {
   color: white;
+  text-align: center;
 }
 .common {
   width: 100%;
@@ -98,7 +99,7 @@
 }
 .social p {
   color: white;
-  font-size: 1.125rem;
+  font-size: 1rem;
   margin: 0;
 }
 .social .social_button {
@@ -148,7 +149,7 @@
   margin: 28px auto 0px auto;
 }
 .feedback .feedback_vk {
-  width: 46.5%;
+  width: 62%;
   height: auto;
   margin: 0 auto;
 }
@@ -159,12 +160,11 @@
   background-color: #003d99;
   color: white;
   font-size: 1.125rem;
-  cursor: pointer;
 }
 .feedback .feedback_name {
   width: 100%;
   color: #3385ff;
-  font-size: 1.125rem;
+  font-size: 1rem;
   margin-top: 3px;
 }
 .feedback .feedback_name p:first-child {
