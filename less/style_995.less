@@ -6,7 +6,7 @@
 @bdef:solid 1px red;
 @main_foto:url("../img/header_992.jpg");
 @height_mainfoto: 500px;
-
+/*Шпака сайта*/
 .header{
 	display: flex;
 	flex-direction: column;
@@ -29,6 +29,70 @@
 		text-align: center;
 	}
 }
+/*Раздел навигации*/
+nav{
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 50px;
+	margin-top: 450px;
+	.menu{
+		display: flex;
+		width: 100%;
+		height: 100%;
+		justify-content:center;
+		li{
+			list-style: none;
+			margin-right: 2%;
+			a{
+				color: white;
+				text-decoration: none;
+				font-size: 1.1rem;
+			}
+		}
+		li:last-child{
+			margin-right: 0;
+		}
+		.dropdown1{
+			width: auto;
+			a{
+				display: flex;
+				height: 27px;
+				div{
+					margin-left: 5px;
+					width: 20px;
+					height: 27px;
+				}
+
+			}
+			.dropdown1_menu{
+				display: none;
+				flex-direction: column;
+				align-items: flex-start;
+				width: 100%;
+				height:68px;
+				padding:5px 0 0 5px;
+				background: blue;
+				li{
+					list-style: none;
+					a{
+						color: white;
+					}
+				}
+				li:last-child{
+					margin: 5px 0 0 0;
+				}
+			}
+			&:hover{
+				.dropdown1_menu{
+					display: inherit;
+				}
+			}
+			
+		}
+	}
+}
+/*Основной раздел*/
 .common{
 	width: 100%;
 	height: auto;
