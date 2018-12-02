@@ -34,18 +34,59 @@ nav .menu {
   width: 100%;
   height: 100%;
   justify-content: center;
+  list-style: none;
+  border-bottom: solid 3px #FFBF00;
 }
 nav .menu li {
-  list-style: none;
   margin-right: 2%;
 }
 nav .menu li a {
   color: white;
   text-decoration: none;
   font-size: 1.1rem;
+  margin: 0 auto;
+}
+nav .menu li:first-child {
+  border-top: solid 3px #FFBF00;
+  border-left: solid 3px #FFBF00;
+  border-right: solid 3px #FFBF00;
+  border-radius: 10px 10px 0 0;
+  background: #ffbf00;
+}
+nav .menu li:first-child a {
+  color: #1B1BB3;
+}
+nav .menu .drop {
+  border-top: solid 3px transparent;
+  border-left: solid 3px transparent;
+  border-right: solid 3px transparent;
+  border-radius: 10px 10px 0 0;
+}
+nav .menu .drop:hover {
+  border-top: solid 3px #FFBF00;
+  border-left: solid 3px #FFBF00;
+  border-right: solid 3px #FFBF00;
+  border-radius: 10px 10px 0 0;
+  background: #ffbf00;
+}
+nav .menu .drop:hover a {
+  color: #1B1BB3;
 }
 nav .menu li:last-child {
   margin-right: 0;
+  opacity: 0.5;
+  color: white;
+}
+nav .menu li:last-child:hover {
+  border-top: solid 3px transparent;
+  border-left: solid 3px transparent;
+  border-right: solid 3px transparent;
+  border-radius: 10px 10px 0 0;
+  background: transparent;
+}
+nav .menu li:last-child:hover a {
+  color: white;
+  cursor: default;
 }
 nav .menu .dropdown1 {
   width: auto;
@@ -63,22 +104,38 @@ nav .menu .dropdown1 .dropdown1_menu {
   display: none;
   flex-direction: column;
   align-items: flex-start;
-  width: 100%;
-  height: 68px;
-  padding: 5px 0 0 5px;
+  width: 104.5%;
+  height: 70px;
+  padding: 5px 0 0 1%;
+  margin-left: -2%;
+  list-style: none;
   background: blue;
+  border-radius: 10px;
 }
 nav .menu .dropdown1 .dropdown1_menu li {
   list-style: none;
+  border-top: solid 3px transparent;
+  border-left: solid 3px transparent;
+  border-right: solid 3px transparent;
+  border-radius: 10px;
+  background: transparent;
+  width: 100%;
 }
 nav .menu .dropdown1 .dropdown1_menu li a {
   color: white;
+  padding-left: 2%;
 }
 nav .menu .dropdown1 .dropdown1_menu li:last-child {
-  margin: 5px 0 0 0;
+  margin: 5px 0 0 0%;
+  opacity: 1;
 }
 nav .menu .dropdown1:hover .dropdown1_menu {
   display: inherit;
+}
+nav .menu .dropdown1:hover .dropdown1_menu a:hover {
+  background: #ffbf00;
+  border-radius: 10px;
+  color: #1b1bb3;
 }
 /*Основной раздел*/
 .common {
