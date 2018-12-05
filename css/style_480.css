@@ -17,6 +17,87 @@
   color: white;
   text-align: center;
 }
+/*Навигационное меню*/
+nav {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 41px;
+  background: #FFBF00;
+  top: 0px;
+}
+nav .mainmenu {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  align-items: center;
+}
+nav .mainmenu .spec {
+  display: flex;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 4px;
+  border: solid 2px #1B1BB3;
+  width: 40px;
+  height: 32px;
+  font-size: 3.3rem;
+  line-height: 2;
+  color: #1B1BB3;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+nav .mainmenu .menu {
+  display: none;
+  right: 10px;
+  width: 100%;
+  flex-direction: column;
+  margin-top: 5px;
+  padding: 0px;
+  background: #FFBF00;
+  line-height: 1.7;
+  align-items: center;
+}
+nav .mainmenu .menu li {
+  font-size: 0.8rem;
+  list-style: none;
+  border-bottom: solid 1px #BF9B30;
+}
+nav .mainmenu .menu li a {
+  color: #1B1BB3;
+}
+nav .mainmenu .menu li a:hover {
+  text-decoration: none;
+  color: #4F4FD9;
+}
+nav .mainmenu .menu .dropdown1 div {
+  display: none;
+}
+nav .mainmenu .menu .dropdown1 .dropdown1_menu {
+  display: none;
+  flex-direction: column;
+  padding: 0;
+}
+nav .mainmenu .menu .dropdown1 .dropdown1_menu li {
+  width: 100%;
+}
+nav .mainmenu:hover {
+  cursor: pointer;
+}
+nav .mainmenu:hover .menu {
+  display: flex;
+}
+nav .mainmenu:hover .menu .dropdown1:hover .dropdown1_menu {
+  display: inherit;
+  list-style: none;
+}
+nav .mainmenu:hover .menu .dropdown1:hover .dropdown1_menu li {
+  border-bottom: none;
+  text-align: center;
+}
+/*Основная часть*/
 .common {
   width: 100%;
   height: auto;
@@ -99,7 +180,7 @@
 }
 .social p {
   color: white;
-  font-size: 1rem;
+  font-size: 1.125rem;
   margin: 0;
 }
 .social .social_button {
@@ -149,7 +230,7 @@
   margin: 28px auto 0px auto;
 }
 .feedback .feedback_vk {
-  width: 62%;
+  width: 46.5%;
   height: auto;
   margin: 0 auto;
 }
@@ -160,11 +241,12 @@
   background-color: #003d99;
   color: white;
   font-size: 1.125rem;
+  cursor: pointer;
 }
 .feedback .feedback_name {
   width: 100%;
   color: #3385ff;
-  font-size: 1rem;
+  font-size: 1.125rem;
   margin-top: 3px;
 }
 .feedback .feedback_name p:first-child {
