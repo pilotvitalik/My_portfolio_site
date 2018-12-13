@@ -71,6 +71,15 @@ nav{
 						color: #4F4FD9;
 					}
 				}
+				li:nth-child(3),
+				li:nth-child(4),
+				li:nth-child(5),
+				li:nth-child(6){
+					opacity: 0.5;
+					a{
+					color: #1B1BB3;
+					}
+				}
 				.dropdown1{
 					div{
 						display: none;
@@ -89,6 +98,16 @@ nav{
 		cursor:pointer;
 		.menu{
 			display: flex;
+				li:nth-child(3),
+				li:nth-child(4),
+				li:nth-child(5),
+				li:nth-child(6),{
+					opacity: 0.5;
+					a{
+						cursor: default;
+						color: #1B1BB3;
+					}
+				}
 			.dropdown1:hover{
 				.dropdown1_menu{
 					display: inherit;
@@ -247,8 +266,9 @@ nav{
 	}
 	.feedback_name{
 		width: 100%;
+		padding: 0;
 		color: @color_footername;
-		font-size: 0.9rem;
+		font-size: 4vw;
 		margin-top: 3px;
 		p:first-child{
 			margin: 0;

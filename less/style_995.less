@@ -84,12 +84,22 @@ nav{
 					color: #1B1BB3;
 				}
 			}
-			li:last-child{
-				margin-right: 0;
+			li:nth-child(3),
+			li:nth-child(4),
+			li:nth-child(5),
+			li:nth-child(6){
 				opacity: 0.5;
 				color: white;
 			}
-			li:last-child:hover{
+			/*li:last-child{
+				margin-right: 0;
+				opacity: 0.5;
+				color: white;
+			}*/
+			li:nth-child(3):hover,
+			li:nth-child(4):hover,
+			li:nth-child(5):hover,
+			li:nth-child(6):hover{
 				border-top: solid 3px transparent;
 				border-left: solid 3px transparent;
 				border-right: solid 3px transparent;

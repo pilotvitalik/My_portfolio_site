@@ -76,6 +76,15 @@ nav{
 						color: #4F4FD9;
 					}
 				}
+				li:nth-child(3),
+				li:nth-child(4),
+				li:nth-child(5),
+				li:nth-child(6){
+					opacity: 0.5;
+					a{
+					color: #1B1BB3;
+					}
+				}
 				.dropdown1{
 					div{
 						display: none;
@@ -95,6 +104,16 @@ nav{
 		cursor:pointer;
 		.menu{
 			display: flex;
+				li:nth-child(3),
+				li:nth-child(4),
+				li:nth-child(5),
+				li:nth-child(6){
+					opacity: 0.5;
+					a{
+						cursor: default;
+						color: #1B1BB3;
+					}
+				}
 			.dropdown1:hover{
 				.dropdown1_menu{
 					display: inherit;
@@ -191,7 +210,7 @@ nav{
 	text-align: center;
 	p{
 		color: white;
-		font-size: 1.125rem;
+		font-size: 4.85vw;
 		margin: 0;
 	}
 	.social_button{
@@ -241,23 +260,25 @@ nav{
 	height: auto;
 	margin: 28px auto 0px auto;
 	.feedback_vk{
-		width: 46.5%;
+		width: 100%;
 		height: auto;
 		margin: 0 auto;
 		input{
 			height: 40px;
+			width: 65%;
+			margin: 0 17.5%;
 			border: solid 3px white;
 			border-radius: 30px;
 			background-color: @color_footer;
 			color: white;
-			font-size: 1.125rem;
+			font-size: 5vw;
 			cursor: pointer;
 		}
 	}
 	.feedback_name{
 		width: 100%;
 		color: @color_footername;
-		font-size: 1.125rem;
+		font-size: 3.8vw;
 		margin-top: 3px;
 		p:first-child{
 			margin: 0;

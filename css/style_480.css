@@ -72,6 +72,18 @@ nav .mainmenu .menu li a:hover {
   text-decoration: none;
   color: #4F4FD9;
 }
+nav .mainmenu .menu li:nth-child(3),
+nav .mainmenu .menu li:nth-child(4),
+nav .mainmenu .menu li:nth-child(5),
+nav .mainmenu .menu li:nth-child(6) {
+  opacity: 0.5;
+}
+nav .mainmenu .menu li:nth-child(3) a,
+nav .mainmenu .menu li:nth-child(4) a,
+nav .mainmenu .menu li:nth-child(5) a,
+nav .mainmenu .menu li:nth-child(6) a {
+  color: #1B1BB3;
+}
 nav .mainmenu .menu .dropdown1 div {
   display: none;
 }
@@ -88,6 +100,19 @@ nav .mainmenu:hover {
 }
 nav .mainmenu:hover .menu {
   display: flex;
+}
+nav .mainmenu:hover .menu li:nth-child(3),
+nav .mainmenu:hover .menu li:nth-child(4),
+nav .mainmenu:hover .menu li:nth-child(5),
+nav .mainmenu:hover .menu li:nth-child(6) {
+  opacity: 0.5;
+}
+nav .mainmenu:hover .menu li:nth-child(3) a,
+nav .mainmenu:hover .menu li:nth-child(4) a,
+nav .mainmenu:hover .menu li:nth-child(5) a,
+nav .mainmenu:hover .menu li:nth-child(6) a {
+  cursor: default;
+  color: #1B1BB3;
 }
 nav .mainmenu:hover .menu .dropdown1:hover .dropdown1_menu {
   display: inherit;
@@ -180,7 +205,7 @@ nav .mainmenu:hover .menu .dropdown1:hover .dropdown1_menu li {
 }
 .social p {
   color: white;
-  font-size: 1.125rem;
+  font-size: 4.85vw;
   margin: 0;
 }
 .social .social_button {
@@ -230,23 +255,25 @@ nav .mainmenu:hover .menu .dropdown1:hover .dropdown1_menu li {
   margin: 28px auto 0px auto;
 }
 .feedback .feedback_vk {
-  width: 46.5%;
+  width: 100%;
   height: auto;
   margin: 0 auto;
 }
 .feedback .feedback_vk input {
   height: 40px;
+  width: 65%;
+  margin: 0 17.5%;
   border: solid 3px white;
   border-radius: 30px;
   background-color: #003d99;
   color: white;
-  font-size: 1.125rem;
+  font-size: 5vw;
   cursor: pointer;
 }
 .feedback .feedback_name {
   width: 100%;
   color: #3385ff;
-  font-size: 1.125rem;
+  font-size: 3.8vw;
   margin-top: 3px;
 }
 .feedback .feedback_name p:first-child {

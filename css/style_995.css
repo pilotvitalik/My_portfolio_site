@@ -43,6 +43,11 @@ nav .mainmenu .menu {
   justify-content: center;
   list-style: none;
   border-bottom: solid 3px #FFBF00;
+  /*li:last-child{
+				margin-right: 0;
+				opacity: 0.5;
+				color: white;
+			}*/
 }
 nav .mainmenu .menu li {
   margin-right: 2%;
@@ -79,19 +84,27 @@ nav .mainmenu .menu .drop:hover {
 nav .mainmenu .menu .drop:hover a {
   color: #1B1BB3;
 }
-nav .mainmenu .menu li:last-child {
-  margin-right: 0;
+nav .mainmenu .menu li:nth-child(3),
+nav .mainmenu .menu li:nth-child(4),
+nav .mainmenu .menu li:nth-child(5),
+nav .mainmenu .menu li:nth-child(6) {
   opacity: 0.5;
   color: white;
 }
-nav .mainmenu .menu li:last-child:hover {
+nav .mainmenu .menu li:nth-child(3):hover,
+nav .mainmenu .menu li:nth-child(4):hover,
+nav .mainmenu .menu li:nth-child(5):hover,
+nav .mainmenu .menu li:nth-child(6):hover {
   border-top: solid 3px transparent;
   border-left: solid 3px transparent;
   border-right: solid 3px transparent;
   border-radius: 10px 10px 0 0;
   background: transparent;
 }
-nav .mainmenu .menu li:last-child:hover a {
+nav .mainmenu .menu li:nth-child(3):hover a,
+nav .mainmenu .menu li:nth-child(4):hover a,
+nav .mainmenu .menu li:nth-child(5):hover a,
+nav .mainmenu .menu li:nth-child(6):hover a {
   color: white;
   cursor: default;
 }

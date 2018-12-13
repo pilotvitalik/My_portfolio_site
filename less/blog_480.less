@@ -1,0 +1,262 @@
+@bdef: solid 1px red;
+
+body{
+	width: 100%;
+	margin: 0;
+}
+.wrapper,
+.common{
+	width: 100%;
+	height: auto;
+}
+.header{
+	width: 100%;
+	height: 200px;
+	background: scroll blue url("../img/header_480_1.jpg") center no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	h2,
+	p{
+		color: white;
+		line-height: 1.5;
+		display: relative;
+	}
+	h2{
+		margin-top:60px;
+	}
+	p{
+		margin: 0;
+	}
+	nav{
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		height: 40px;
+		display: flex;
+		position: absolute;
+		justify-content: space-around;
+		align-items: center;
+		background: #FFBF00;
+		.social{
+			display: block;
+			width: 34px;
+			height: 34px;
+			border-radius: 34px;
+		}
+		.social_vk{
+			background: scroll url("../img/blog_icons_320.jpg") -65px -11px no-repeat;
+		}
+		.social_facebook{
+			background: scroll url("../img/blog_icons_320.jpg") -117px -11px no-repeat;
+		}
+		.social-inst{
+			background: scroll url("../img/blog_icons_320.jpg") -273.5px -11px no-repeat;
+		}
+		.social-ytube{
+			background: scroll url("../img/blog_icons_320.jpg") -170px -64px no-repeat;
+		}
+		.mainmenu{
+			display: flex;
+			flex-direction: column;
+			width: 30px;
+			height: 30px;
+			padding: 0;
+			border: solid 3px #1B1BB3;
+			border-radius: 5px;
+			.gamb{
+				display: flex;
+				position: relative;
+				width: 100%;
+				height: 30px;
+				margin: 0;
+				padding: 0px;
+				flex-direction: column;
+				justify-content: space-around;
+				align-items: center;
+				div{
+					display: block;
+					position: relative;
+					background: #1B1BB3;
+					width: 20px;
+					height: 3px;
+					margin: 0px;
+					border-radius: 3px;
+					border: solid 1px #1B1BB3;
+				}
+			}
+			.menu{
+				display: none;
+				position: absolute;
+				flex-direction: column;
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				width: 100%;
+				height: auto;
+				top: 40px;
+				left: 0%;
+				background: #FFBF00;
+				li:first-child{
+					border-bottom: none;
+					color: #FFBF00;
+					line-height: 1;
+				}
+				li{
+					border-bottom: solid 1px #BF9B30;
+					a{
+					text-decoration: none;
+					color: #1B1BB3;
+					}
+				}
+				.dropdown1{
+					div{
+						display: none;
+					}
+					ul{
+						display: none;
+						list-style: none;
+						padding: 0;
+						li{
+							border-bottom: none;
+						}
+						li:first-child{
+							margin: 2px 0 3px 0;
+						}
+					}
+				}
+				.drop{
+					opacity: 0.5;
+					&>a{
+						color: #1B1BB3;
+						cursor: default;
+					}
+				}
+			}
+		}
+		.mainmenu:hover{
+			.menu{
+				display: flex;
+				.dropdown1:hover{
+					ul{
+						display: block;
+						a{
+							cursor: default;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.t091218{
+	width: 80%;
+	height: auto;
+	margin: 15px auto 0 auto;
+	padding-bottom: 10px;
+	border-bottom: solid 1px rgb(217, 217, 217);
+	img{
+		width: 100%;
+		height: auto;
+	}
+	.content{
+		width: 100%;
+		height: auto;
+		.name{
+			display: flex;
+			margin: 0;
+			.avatar{
+				width: 40px;
+				height: 40px;
+				margin-right: 3%;
+				background: scroll url("../img/avatar_480.jpg") 100% 60% no-repeat;
+				background-size: cover;
+				border-radius: 40px;
+			}
+			.name2{
+				display: flex;
+				width: 85%;
+				flex-direction: column;
+				justify-content: space-around;
+				.author{
+					width: 70%;
+					height: 13px;
+					padding: 0;
+					p{
+						font-size: 3.5vw;
+						line-height: 1;
+						margin: 0;
+						color: black;
+						line-height: 0.825;
+					}
+					p:hover{
+							color:rgb(89, 89, 89);
+						}
+				}
+				.date{
+					display: flex;
+					align-items: center;
+					width: auto;
+					.date2{
+						width: 37%;
+						height: 13px;
+						p{
+						font-size: 3vw;
+						line-height: 1;
+						margin: 0;
+						color: black;
+						}
+						p:hover{
+							color:rgb(89, 89, 89);
+						}
+					}
+					.point{
+						width: 2px;
+						height: 2px;
+						margin: 0 4% 0 2%;
+						border: solid 1px rgb(89, 89, 89);
+						border-radius: 3px;
+						background: rgb(89, 89, 89);
+					}
+					.time{
+						width: 45%;
+						height: 13px;
+						p{
+						font-size: 3vw;
+						line-height: 1;
+						margin: 0;
+						color: black;
+						}
+						p:hover{
+							color:rgb(89, 89, 89);
+						}
+					}
+				}
+			}
+		}
+		a{
+			text-decoration: none;
+			.text{
+				margin: 0;
+				h3{
+					line-height: 1.5;
+					margin: 5px 0 15px 0;
+					text-align: center;
+					color: black;
+				}
+				p{
+					text-indent: 10%;
+					text-align: justify;
+					margin: 0;
+					color: black;
+				}
+				h3:hover,
+				p:hover,
+				{
+					color: rgb(89, 89, 89);
+				}
+			}
+		}
+	}
+}
