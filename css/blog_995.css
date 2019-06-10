@@ -33,10 +33,10 @@
 /*Раздел навигации*/
 nav {
   display: block;
-  position: absolute;
+  position: relative;
   width: 100%;
   height: 50px;
-  margin-top: 225px;
+  margin-top: 271px;
 }
 nav .mainmenu {
   width: 100%;
@@ -121,6 +121,7 @@ nav .mainmenu .menu li:nth-child(6):hover a {
 }
 nav .mainmenu .menu .dropdown1 {
   width: auto;
+  z-index: 100;
 }
 nav .mainmenu .menu .dropdown1 a {
   display: flex;
@@ -162,6 +163,7 @@ nav .mainmenu .menu .dropdown1 .dropdown1_menu li:last-child {
 }
 nav .mainmenu .menu .dropdown1:hover .dropdown1_menu {
   display: inherit;
+
 }
 nav .mainmenu .menu .dropdown1:hover .dropdown1_menu a:hover {
   background: #ffbf00;
@@ -170,19 +172,38 @@ nav .mainmenu .menu .dropdown1:hover .dropdown1_menu a:hover {
 }
 /*Основной раздел*/
 .common {
+  display: flex;
+  flex-direction: column;
+  position: relative;
   width: 100%;
   height: auto;
-  text-align: center;
+
 }
-.common h4 {
-  font-size: 1.875rem;
-  color: blue;
-  margin-top: 9.333333333px;
+.common #d10062019{
+  display: flex;
+  position: relative;
+  width: 70%;
+  height: auto;
+  padding: 0;
+  margin: 20px auto;
+  border: solid 1px red;
 }
+/*Основной раздел - изображение */
+.common #d10062019 .img{
+  display: block;
+  position: relative;
+  width: 288px;
+  height: 150px;
+  padding: 0;
+  margin: auto;
+  background: grey url("../img/first_post_995.jpg");
+}
+
 /*Начало подвала*/
 .footer {
   display: flex;
   flex-direction: column;
+  position: relative;
   width: 100%;
   height: auto;
   background-color: #003d99;
