@@ -1,299 +1,299 @@
-body {
+/*Шпака сайта*/
+.header {
+  display: flex;
+  flex-direction: column;
   width: 100%;
+  height: 500px;
+  background-image: url("../img/header_992.jpg");
+  background-size: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+.header h2 {
+  color: white;
+  margin: 0;
+  font-size: 4rem;
+  margin-bottom: 30px;
+}
+.header .abbr p {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
   margin: 0;
 }
-.wrapper,
+.header .abbr div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.header .abbr div p:nth-child(2) {
+  margin: 0 10% 0 10%;
+}
+/*Раздел навигации*/
+nav {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  margin-top: 225px;
+}
+nav .mainmenu {
+  width: 100%;
+  height: 50px;
+}
+nav .mainmenu .spec {
+  display: none;
+}
+nav .mainmenu .menu {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  list-style: none;
+  border-bottom: solid 3px #FFBF00;
+  /*li:last-child{
+				margin-right: 0;
+				opacity: 0.5;
+				color: white;
+			}*/
+}
+nav .mainmenu .menu li {
+  margin-right: 2%;
+}
+nav .mainmenu .menu li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  margin: 0 auto;
+}
+nav .mainmenu .menu li:last-child {
+  border-top: solid 3px #FFBF00;
+  border-left: solid 3px #FFBF00;
+  border-right: solid 3px #FFBF00;
+  border-radius: 10px 10px 0 0;
+  background: #ffbf00;
+}
+nav .mainmenu .menu li:last-child a {
+  color: #1B1BB3;
+}
+nav .mainmenu .menu .drop {
+  border-top: solid 3px transparent;
+  border-left: solid 3px transparent;
+  border-right: solid 3px transparent;
+  border-radius: 10px 10px 0 0;
+}
+nav .mainmenu .menu .drop:hover {
+  border-top: solid 3px #FFBF00;
+  border-left: solid 3px #FFBF00;
+  border-right: solid 3px #FFBF00;
+  border-radius: 10px 10px 0 0;
+  background: #ffbf00;
+  cursor: pointer;
+}
+nav .mainmenu .menu .drop:hover a {
+  color: #1B1BB3;
+}
+nav .mainmenu .menu li:nth-child(3),
+nav .mainmenu .menu li:nth-child(4),
+nav .mainmenu .menu li:nth-child(5),
+nav .mainmenu .menu li:nth-child(6) {
+  opacity: 0.5;
+  color: white;
+}
+nav .mainmenu .menu li:nth-child(3):hover,
+nav .mainmenu .menu li:nth-child(4):hover,
+nav .mainmenu .menu li:nth-child(5):hover,
+nav .mainmenu .menu li:nth-child(6):hover {
+  border-top: solid 3px transparent;
+  border-left: solid 3px transparent;
+  border-right: solid 3px transparent;
+  border-radius: 10px 10px 0 0;
+  background: transparent;
+  cursor: default;
+}
+nav .mainmenu .menu li:nth-child(3):hover a,
+nav .mainmenu .menu li:nth-child(4):hover a,
+nav .mainmenu .menu li:nth-child(5):hover a,
+nav .mainmenu .menu li:nth-child(6):hover a {
+  color: white;
+  cursor: default;
+}
+nav .mainmenu .menu .dropdown1 {
+  width: auto;
+}
+nav .mainmenu .menu .dropdown1 a {
+  display: flex;
+  height: 27px;
+}
+nav .mainmenu .menu .dropdown1 a div {
+  margin-left: 5px;
+  width: 20px;
+  height: 27px;
+}
+nav .mainmenu .menu .dropdown1 .dropdown1_menu {
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 104.5%;
+  height: 70px;
+  padding: 5px 0 0 1%;
+  margin-left: -2%;
+  list-style: none;
+  background: blue;
+  border-radius: 10px;
+}
+nav .mainmenu .menu .dropdown1 .dropdown1_menu li {
+  list-style: none;
+  border-top: solid 3px transparent;
+  border-left: solid 3px transparent;
+  border-right: solid 3px transparent;
+  border-radius: 10px;
+  background: transparent;
+  width: 100%;
+}
+nav .mainmenu .menu .dropdown1 .dropdown1_menu li a {
+  color: white;
+  padding-left: 2%;
+}
+nav .mainmenu .menu .dropdown1 .dropdown1_menu li:last-child {
+  margin: 5px 0 0 0%;
+  opacity: 1;
+}
+nav .mainmenu .menu .dropdown1:hover .dropdown1_menu {
+  display: inherit;
+}
+nav .mainmenu .menu .dropdown1:hover .dropdown1_menu a:hover {
+  background: #ffbf00;
+  border-radius: 10px;
+  color: #1b1bb3;
+}
+/*Основной раздел*/
 .common {
   width: 100%;
   height: auto;
-}
-.header {
-  width: 100%;
-  height: 400px;
-  background: scroll #0000ff url("../img/header_992.jpg") center no-repeat;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
   text-align: center;
-  justify-content: center;
 }
-.header h2,
-.header p {
-  color: white;
-  line-height: 1.5;
-  display: relative;
-}
-.header h2 {
-  margin: 0;
-  font-size: 3vw;
-}
-.header p {
-  margin-top: 50px;
-  font-size: 1.5vw;
-}
-.header nav {
-  margin: 350px 0 0 0;
-  padding: 0;
-  width: 100%;
-  height: 50px;
-  display: flex;
-  position: absolute;
-  justify-content: space-around;
-  align-items: center;
-  border-bottom: solid 3px #FFBF00;
-}
-.header nav .social {
-  display: none;
-  width: 34px;
-  height: 34px;
-  border-radius: 34px;
-}
-.header nav .social_vk {
-  background: scroll url("../img/blog_icons_320.jpg") -65px -11px no-repeat;
-}
-.header nav .social_facebook {
-  background: scroll url("../img/blog_icons_320.jpg") -117px -11px no-repeat;
-}
-.header nav .social-inst {
-  background: scroll url("../img/blog_icons_320.jpg") -273.5px -11px no-repeat;
-}
-.header nav .social-ytube {
-  background: scroll url("../img/blog_icons_320.jpg") -170px -64px no-repeat;
-}
-.header nav .mainmenu {
-  display: flex;
-  /*flex-direction: column;*/
-  justify-content: center;
-  width: 100%;
-  height: 50px;
-  padding: 0;
-}
-.header nav .mainmenu .gamb {
-  display: none;
-  position: relative;
-  width: 100%;
-  height: 30px;
-  margin: 0;
-  padding: 0px;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-.header nav .mainmenu .gamb div {
-  display: block;
-  position: relative;
-  background: #1B1BB3;
-  width: 20px;
-  height: 3px;
-  margin: 0px;
-  border-radius: 3px;
-  border: solid 1px #1B1BB3;
-}
-.header nav .mainmenu .menu {
-  display: flex;
-  position: absolute;
-  /*flex-direction: column;*/
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  width: 100%;
-  height: 50px;
-  /*top: 40px;*/
-  left: 0%;
-  /*background: #FFBF00;*/
-  justify-content: center;
-}
-.header nav .mainmenu .menu > li:first-child {
-  display: none;
-  /*border-bottom: none;
-					color: #FFBF00;
-					line-height: 1;*/
-}
-.header nav .mainmenu .menu li {
-  margin-right: 2%;
-  border: solid 5px transparent;
-  /*border-bottom: solid 1px #BF9B30;*/
-}
-.header nav .mainmenu .menu li a {
-  font-size: 1.3vw;
-  text-decoration: none;
-  color: white;
-}
-.header nav .mainmenu .menu > li:last-child {
-  background: #FFBF00;
-  border-radius: 10px 10px 0 0;
-  width: 60px;
-}
-.header nav .mainmenu .menu > li:nth-child(2):hover,
-.header nav .mainmenu .menu > li:nth-child(3):hover {
-  background: #FFBF00;
-  border-radius: 10px 10px 0 0;
-  border: solid 5px #FFBF00;
-}
-.header nav .mainmenu .menu .dropdown1 {
-  width: auto;
-}
-.header nav .mainmenu .menu .dropdown1 a {
-  display: flex;
-  color: white;
-}
-.header nav .mainmenu .menu .dropdown1 div {
-  display: block;
-  margin-left: 5px;
-}
-.header nav .mainmenu .menu .dropdown1 .dropdown1_menu {
-  display: none;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  margin: 10px 0 0 0;
-  padding: 0;
-  width: 106.5%;
-  margin-left: -4.8px;
-  height: 75px;
-  background: blue;
-  border-radius: 10px;
-}
-.header nav .mainmenu .menu .dropdown1 .dropdown1_menu li:first-child {
-  margin: 0 0 5px 0;
-}
-.header nav .mainmenu .menu .dropdown1 .dropdown1_menu li {
-  background: blue;
-  border-radius: 10px;
-  margin: 0;
-  width: 90%;
-}
-.header nav .mainmenu .menu .dropdown1 .dropdown1_menu li a {
-  margin: 0 auto;
-  color: white;
-  justify-content: center;
-}
-.header nav .mainmenu .menu .dropdown1:hover .dropdown1_menu {
-  display: flex;
-}
-.header nav .mainmenu .menu .dropdown1:hover .dropdown1_menu li:hover {
-  background: #FFBF00;
-  border-radius: 10px;
-}
-.header nav .mainmenu .menu .dropdown1:hover .dropdown1_menu li:hover a {
+.common h4 {
+  font-size: 1.875rem;
   color: blue;
-  cursor: default;
+  margin-top: 9.333333333px;
 }
-.header nav .mainmenu .menu .drop {
-  opacity: 0.6;
-}
-.header nav .mainmenu .menu .drop > a {
-  color: white;
-  cursor: default;
-}
-.t091218 {
-  width: 70%;
-  height: auto;
-  margin: 15px auto 0 auto;
-  padding-bottom: 10px;
-  border-bottom: solid 1px #d9d9d9;
-}
-.t091218 img {
-  width: 100%;
-  height: auto;
-}
-.t091218 .content {
-  width: 100%;
-  height: auto;
-}
-.t091218 .content .name {
+/*Начало подвала*/
+.footer {
   display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  background-color: #003d99;
+}
+/*Название подвала*/
+.footer_name {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 15px;
+  padding: 0 0 10px 0;
+}
+.footer_name h4 {
+  font-size: 1.875rem;
+  color: #3385ff;
+  margin: 0;
+  text-align: center;
+}
+.footer_name p {
+  font-size: 0.75rem;
+  color: #3385ff;
+  margin: 0;
+  text-align: center;
+}
+/*Социальные сети*/
+.social {
+  width: 80%;
+  height: auto;
+  padding: 0;
+  margin: 0 auto;
+  margin-top: 15px;
+  text-align: center;
+}
+.social p {
+  color: white;
+  font-size: 1.40625rem;
   margin: 0;
 }
-.t091218 .content .name .avatar {
-  width: 50px;
-  height: 50px;
-  margin-right: 3%;
-  background: scroll url("../img/avatar_995.jpg") 100% 60% no-repeat;
-  background-size: cover;
-  border-radius: 40px;
-}
-.t091218 .content .name .name2 {
+.social .social_button {
   display: flex;
-  width: 85%;
-  flex-direction: column;
+  width: 37%;
+  height: auto;
+  padding: 0;
+  margin: 0 0 0 32%;
   justify-content: space-around;
+  align-items: center;
 }
-.t091218 .content .name .name2 .author {
-  width: 70%;
-  height: 20px;
+.social .social_button .social_vk {
+  background: #003d99 url(../img/social_icons_480.jpg) -80px -14px no-repeat;
+  border-radius: 41px;
+}
+.social .social_button .social_tw {
+  background: #003d99 url(../img/social_icons_480.jpg) -206px -12px no-repeat;
+  border-radius: 41px;
+}
+.social .social_button .social_fb {
+  background: #003d99 url(../img/social_icons_480.jpg) -142px -14px no-repeat;
+  border-radius: 41px;
+}
+.social .social_button .social_inst {
+  background: #003d99 url(../img/social_icons_480.jpg) -333px -14px no-repeat;
+  border-radius: 41px;
+}
+.social .social_button .social_yout {
+  background: #003d99 url(../img/social_icons_480.jpg) -206px -79px no-repeat;
+  border-radius: 41px;
+}
+.social_vk,
+.social_tw,
+.social_fb,
+.social_inst,
+.social_yout {
+  display: block;
+  width: 41px;
+  height: 41px;
+  margin: 0;
   padding: 0;
 }
-.t091218 .content .name .name2 .author p {
-  font-size: 1.5vw;
-  line-height: 1;
+/*Обратная связь*/
+.feedback {
+  width: 90%;
+  height: auto;
+  margin: 15px auto 0px auto;
+}
+.feedback .feedback_vk {
+  width: 20.8%;
+  height: auto;
+  margin: 0 auto;
+}
+.feedback .feedback_vk input {
+  height: 40px;
+  border: solid 3px white;
+  border-radius: 30px;
+  background-color: #003d99;
+  color: white;
+  font-size: 1.40625rem;
+}
+.feedback .feedback_vk input:hover {
+  cursor: pointer;
+}
+.feedback .feedback_name {
+  width: 100%;
+  color: #3385ff;
+  font-size: 1rem;
+  margin-top: 3px;
+}
+.feedback .feedback_name p:first-child {
   margin: 0;
-  color: black;
-  line-height: 0.825;
-}
-.t091218 .content .name .name2 .author p:hover {
-  color: #595959;
-}
-.t091218 .content .name .name2 .date {
-  display: flex;
-  align-items: center;
-  width: auto;
-  margin-top: 10px;
-}
-.t091218 .content .name .name2 .date .date2 {
-  width: 20%;
-  height: 20px;
-}
-.t091218 .content .name .name2 .date .date2 p {
-  font-size: 1.5vw;
-  line-height: 0.8;
-  margin: 0;
-  color: black;
-}
-.t091218 .content .name .name2 .date .date2 p:hover {
-  color: #595959;
-}
-.t091218 .content .name .name2 .date .point {
-  width: 2px;
-  height: 2px;
-  margin: auto 2%;
-  border: solid 1px #595959;
-  border-radius: 3px;
-  background: #595959;
-}
-.t091218 .content .name .name2 .date .time {
-  width: 30%;
-  height: 20px;
-}
-.t091218 .content .name .name2 .date .time p {
-  font-size: 1.5vw;
-  line-height: 0.8;
-  margin: 0;
-  color: black;
-}
-.t091218 .content .name .name2 .date .time p:hover {
-  color: #595959;
-}
-.t091218 .content a {
-  text-decoration: none;
-}
-.t091218 .content a .text {
-  margin: 20px 0 0 0;
-}
-.t091218 .content a .text h3 {
-  line-height: 1.5;
-  margin: 5px 0 5px 0;
   text-align: center;
-  color: black;
 }
-.t091218 .content a .text p {
-  text-indent: 10%;
-  text-align: justify;
+.feedback .feedback_name p:nth-child(2) {
   margin: 0;
-  color: black;
-}
-.t091218 .content a .text h3:hover,
-.t091218 .content a .text p:hover {
-  color: #595959;
+  text-align: center;
 }
