@@ -179,8 +179,9 @@ nav .mainmenu .menu .dropdown1:hover .dropdown1_menu a:hover {
   height: auto;
 
 }
-.common #d10062019{
+.common #d11062019{
   display: flex;
+  flex-direction: column;
   position: relative;
   width: 70%;
   height: auto;
@@ -189,7 +190,7 @@ nav .mainmenu .menu .dropdown1:hover .dropdown1_menu a:hover {
   border: solid 1px red;
 }
 /*Основной раздел - изображение */
-.common #d10062019 .img{
+.common #d11062019 .img{
   display: block;
   position: relative;
   width: 288px;
@@ -198,6 +199,73 @@ nav .mainmenu .menu .dropdown1:hover .dropdown1_menu a:hover {
   margin: auto;
   background: grey url("../img/first_post_995.jpg");
 }
+
+/*Основной раздел - данные автора*/
+.common .author{
+  display: flex;
+  position: relative;
+  width: auto;
+  height: 70px;
+}
+.common .author>div:first-child{
+  display: block;
+  position: inherit;
+  width: 70px;
+  height: 70px;
+  background: blue url("../img/avatar_995.jpg");
+  border-radius: 70px;
+  background-position: 0 -7px;
+}
+.common .author>div:last-child{
+  display: flex;
+  flex-direction: column;
+  position: inherit;
+  width: 300px;
+  height: 50px;
+  align-items: center;
+  margin: auto 0;
+}
+.common .author>div:last-child>p{
+  display: block;
+  position: inherit;
+  align-self: flex-start;
+  width: 80%;
+  height: 25px;
+  margin: 0 0 0 10px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.common .author div:last-child .inform{
+  display: flex;
+  position: inherit;
+  width: 100%;
+  height: 25px;
+}
+.common .author div:last-child .inform p:first-child{
+  display: block;
+  position: inherit;
+  width: 90px;
+  height: 100%;
+  font-size: 0.9rem;
+  margin: 0 0 0 10px;
+}
+.common .author div:last-child .inform span{
+  display: block;
+  position: inherit;
+  width: 15px;
+  height: 100%;
+  text-align: center;
+  margin: 0 5px 0 0;
+}
+.common .author div:last-child .inform p:last-child{
+  display: block;
+  position: inherit;
+  width: 115px;
+  height: 100%;
+  font-size: 0.9rem;
+  text-align: left;
+}
+
 
 /*Начало подвала*/
 .footer {
