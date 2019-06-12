@@ -187,7 +187,6 @@ nav .mainmenu .menu .dropdown1:hover .dropdown1_menu a:hover {
   height: auto;
   padding: 0;
   margin: 20px auto;
-  border: solid 1px red;
 }
 /*Основной раздел - изображение */
 .common #d11062019 .img{
@@ -206,6 +205,7 @@ nav .mainmenu .menu .dropdown1:hover .dropdown1_menu a:hover {
   position: relative;
   width: auto;
   height: 70px;
+  margin: 15px 0 0 0;
 }
 .common .author>div:first-child{
   display: block;
@@ -222,16 +222,15 @@ nav .mainmenu .menu .dropdown1:hover .dropdown1_menu a:hover {
   position: inherit;
   width: 300px;
   height: 50px;
-  align-items: center;
-  margin: auto 0;
+  margin: 20px 0 0 0 ;
 }
 .common .author>div:last-child>p{
   display: block;
   position: inherit;
   align-self: flex-start;
   width: 80%;
-  height: 25px;
-  margin: 0 0 0 10px;
+  height: 20px;
+  margin: 10px 0 0 10px;
   font-size: 1rem;
   font-weight: 700;
 }
@@ -239,7 +238,7 @@ nav .mainmenu .menu .dropdown1:hover .dropdown1_menu a:hover {
   display: flex;
   position: inherit;
   width: 100%;
-  height: 25px;
+  height: 20px;
 }
 .common .author div:last-child .inform p:first-child{
   display: block;
@@ -248,6 +247,7 @@ nav .mainmenu .menu .dropdown1:hover .dropdown1_menu a:hover {
   height: 100%;
   font-size: 0.9rem;
   margin: 0 0 0 10px;
+  padding: 0;
 }
 .common .author div:last-child .inform span{
   display: block;
@@ -265,7 +265,45 @@ nav .mainmenu .menu .dropdown1:hover .dropdown1_menu a:hover {
   font-size: 0.9rem;
   text-align: left;
 }
-
+/*Основной раздел - превью статьи*/
+.common .content{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: auto;
+  height: 100px;
+  margin: 15px 0 0 0;
+}
+.common .content a{
+  text-decoration: none;
+  color: #212529;
+  margin: 0 auto 10px auto;
+}
+.common .content a:hover{
+  text-decoration: none;
+  color: #212529;
+  margin: 0 auto 10px auto;
+  cursor: pointer;
+}
+.common .content a h5{
+  display: inline;
+  position: relative;
+  width: auto;
+  height: auto;
+  text-align: center;
+  vertical-align: bottom;
+  color: #212529;
+  font-size: 1.1 rem;
+  font-weight: 700;
+}
+.common .content p{
+  display: inline;
+  position: relative;
+  width: auto;
+  height: auto;
+  text-align: justify;  
+  margin: 0;
+}
 
 /*Начало подвала*/
 .footer {
