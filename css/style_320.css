@@ -154,6 +154,18 @@ nav .mainmenu:hover .menu .dropdown1:hover .dropdown1_menu li {
   width: 100%;
   height: 100%;
 }
+.portfolio .site:nth-child(2) .foto a div {
+    width: 100%;
+    height: 100%;
+    background: url(../img/Common_view_of_site_Agency.jpg);
+    background-size: cover;
+  }
+  .portfolio .site:last-child .foto a div {
+    width: 100%;
+    height: 100%;
+    background: url(../img/Common_view_of_site_Aditu.jpg);
+    background-size: cover;
+  }
 .portfolio .site .text {
   display: none;
 }
