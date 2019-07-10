@@ -195,7 +195,17 @@ nav .mainmenu .menu .dropdown1:hover .dropdown1_menu a:hover {
   height: 150px;
   padding: 0;
   margin: auto;
-  background: grey url("../img/first_post_995.jpg");
+  background: grey url(../img/first_post_995.jpg);
+}
+#d08072019 .img{
+  display: block;
+  position: relative;
+  width: 288px;
+  height: 150px;
+  padding: 0;
+  margin: auto;
+  background: grey url("../img/blog/08072019.jpg");
+  background-size: cover;
 }
 
 /*Основной раздел - данные автора*/
