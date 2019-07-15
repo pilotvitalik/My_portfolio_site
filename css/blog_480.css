@@ -1,67 +1,399 @@
-body,
-.wrapper{
-  padding: 0;
-  margin: 0;
-}
-.header{
+.header {
   display: flex;
   flex-direction: column;
-  position: relative;
-  width: 100%x;
-  height: 220px;
-  padding: 0;
-  margin: 0;
-  background: url("../img/header_480_1.jpg");
-}
-.header h2,
-.header p{
-  color: white;
-}
-.header h2{
-  margin-top: 70px;
-  font-size: 24px;
-  text-align: center;
-}
-.header>p:nth-child(2){
-  font-size: 18px;
-  text-align: center;
-  margin-bottom: 10px;
-}
-.header div:nth-child(3){
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  position: relative;
   width: 100%;
-  height: 15px;
-  padding: 0 15%;
-  margin: 0;
-  font-size: 15px;
-  line-height: 15px;
-}
-.header nav{
+  height: 300px;
+  background-image: url("../img/header_480_1.jpg");
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  }
+  .header h2 {
+    color: white;
+    margin: 0;
+  }
+  .header p {
+    color: white;
+    text-align: center;
+  }
+/*Навигационное меню*/
+nav {
   display: block;
   position: absolute;
   width: 100%;
   height: 41px;
-  padding: 0;
-  margin: 0;
   background: #FFBF00;
-}
-.header nav .mainmenu{
-  display: block;
-  width: 31.5px;
-  padding: 0;
-  margin: 2.5px auto 0 auto;
-}
-.mainmenu img{
-  width: 30px;
-  border: solid 3px #1b1bb3;
-  border-radius: 5px;
-}
-.menu{
-  display: none;
-}
-.menu:hover{
+  top: 0px;
+  }
+  nav .mainmenu {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    align-items: center;
+  }
+  nav .mainmenu .spec {
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 4px;
+    border: solid 2px #1B1BB3;
+    width: 40px;
+    height: 32px;
+    font-size: 3.3rem;
+    line-height: 2;
+    color: #1B1BB3;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+  }
+  nav .mainmenu .menu {
+    display: none;
+    right: 10px;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 5px;
+    padding: 0px;
+    background: #FFBF00;
+    line-height: 1.7;
+    align-items: center;
+  }
+  nav .mainmenu .menu li {
+    font-size: 0.8rem;
+    list-style: none;
+    border-bottom: solid 1px #BF9B30;
+  }
+  nav .mainmenu .menu li a {
+    color: #1B1BB3;
+  }
+  nav .mainmenu .menu li a:hover {
+    text-decoration: none;
+    color: #4F4FD9;
+  }
+  nav .mainmenu .menu li:nth-child(3),
+  nav .mainmenu .menu li:nth-child(4),
+  nav .mainmenu .menu li:nth-child(5),
+  nav .mainmenu .menu li:nth-child(6) {
+    opacity: 0.5;
+  }
+  nav .mainmenu .menu li:nth-child(3) a,
+  nav .mainmenu .menu li:nth-child(4) a,
+  nav .mainmenu .menu li:nth-child(5) a,
+  nav .mainmenu .menu li:nth-child(6) a {
+    color: #1B1BB3;
+  }
+  nav .mainmenu .menu .dropdown1 div {
+    display: none;
+  }
+  nav .mainmenu .menu .dropdown1 .dropdown1_menu {
+    display: none;
+    flex-direction: column;
+    padding: 0;
+  }
+  nav .mainmenu .menu .dropdown1 .dropdown1_menu li {
+    width: 100%;
+  }
+  nav .mainmenu:hover {
+    cursor: pointer;
+  }
+  nav .mainmenu:hover .menu {
+    display: flex;
+  }
+  nav .mainmenu:hover .menu li:nth-child(3),
+  nav .mainmenu:hover .menu li:nth-child(4),
+  nav .mainmenu:hover .menu li:nth-child(5),
+  nav .mainmenu:hover .menu li:nth-child(6) {
+    opacity: 0.5;
+  }
+  nav .mainmenu:hover .menu li:nth-child(3) a,
+  nav .mainmenu:hover .menu li:nth-child(4) a,
+  nav .mainmenu:hover .menu li:nth-child(5) a,
+  nav .mainmenu:hover .menu li:nth-child(6) a {
+    cursor: default;
+    color: #1B1BB3;
+  }
+  nav .mainmenu:hover .menu .dropdown1:hover .dropdown1_menu {
+    display: inherit;
+    list-style: none;
+  }
+  nav .mainmenu:hover .menu .dropdown1:hover .dropdown1_menu li {
+    border-bottom: none;
+    text-align: center;
+  }
+/*Основной раздел*/
+.common {
   display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: auto;
 }
+.common .date{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 95%;
+  height: auto;
+  padding: 0;
+  margin: 20px auto;
+}
+/*Основной раздел - изображение */
+#d11062019 .img{
+  display: block;
+  position: relative;
+  width: 288px;
+  height: 150px;
+  padding: 0;
+  margin: 0 auto;
+  background: grey url(../img/first_post_995.jpg);
+}
+#d08072019 .img{
+  display: block;
+  position: relative;
+  width: 300px;
+  height: 150px;
+  padding: 0;
+  margin: 0 auto;
+  background: grey url("../img/blog/08072019.jpg");
+  background-size: cover;
+}
+
+/*Основной раздел - данные автора*/
+.common .author{
+  display: flex;
+  position: relative;
+  width: auto;
+  height: 70px;
+  margin: 15px 0 0 0;
+}
+.common .author>div:first-child{
+  display: block;
+  position: inherit;
+  width: 70px;
+  height: 70px;
+  background: blue url("../img/avatar_995.jpg");
+  border-radius: 70px;
+  background-position: 0 -7px;
+}
+.common .author>div:last-child{
+  display: flex;
+  flex-direction: column;
+  position: inherit;
+  width: 300px;
+  height: 50px;
+  margin: auto 0;
+}
+.common .author>div:last-child>p{
+  display: block;
+  position: inherit;
+  align-self: flex-start;
+  width: 80%;
+  height: 20px;
+  margin: auto 0 0 10px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.common .author div:last-child .inform{
+  display: flex;
+  position: inherit;
+  width: 100%;
+  height: 20px;
+  margin: 0 0 auto 0;
+}
+.common .author div:last-child .inform p:first-child{
+  display: block;
+  position: inherit;
+  width: 90px;
+  height: 100%;
+  font-size: 0.9rem;
+  margin: 0 0 0 10px;
+  padding: 0;
+}
+.common .author div:last-child .inform span{
+  display: block;
+  position: inherit;
+  width: 15px;
+  height: 100%;
+  text-align: center;
+  margin: 0 5px 0 0;
+}
+.common .author div:last-child .inform p:last-child{
+  display: block;
+  position: inherit;
+  width: 115px;
+  height: 100%;
+  font-size: 0.9rem;
+  text-align: left;
+}
+/*Основной раздел - превью статьи*/
+.common .content{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: auto;
+  height: auto;
+  margin: 15px 0 0 0;
+}
+.common .content a{
+  text-decoration: none;
+  color: #212529;
+  margin: 0 auto 10px auto;
+}
+.common .content a:hover{
+  text-decoration: none;
+  color: #212529;
+  margin: 0 auto 10px auto;
+  cursor: pointer;
+}
+.common .content a h5{
+  display: inline;
+  position: relative;
+  width: auto;
+  height: auto;
+  text-align: center;
+  vertical-align: bottom;
+  color: #212529;
+  font-size: 1.1 rem;
+  font-weight: 700;
+}
+.common .content p{
+  display: inline;
+  position: relative;
+  width: auto;
+  height: auto;
+  text-align: justify;  
+  margin: 0;
+}
+#d07072019 .content ol{
+  display: block;
+  position: relative;
+  height: auto;
+}
+#d07072019 .content ol li a{
+  font-style: italic;
+  text-decoration: underline;
+  font-weight: 550;
+}
+#d07072019 .content ol li a:hover{
+  color: blue;
+}
+  /*Начало подвала*/
+  .footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: #003d99;
+  }
+/*Название подвала*/
+.footer_name {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 5.6001px;
+  padding: 0;
+  }
+  .footer_name h4 {
+    font-size: 1.5rem;
+    color: #3385ff;
+    margin: 0;
+    text-align: center;
+  }
+  .footer_name p {
+    font-size: 0.75rem;
+    color: #3385ff;
+    margin: 0;
+    text-align: center;
+  }
+/*Социальные сети*/
+.social {
+  width: 80%;
+  height: auto;
+  padding: 0;
+  margin: 0 auto;
+  margin-top: 28px;
+  text-align: center;
+  }
+  .social p {
+    color: white;
+    font-size: 4.85vw;
+    margin: 0;
+  }
+  .social .social_button {
+    display: flex;
+    width: 90%;
+    height: auto;
+    padding: 0;
+    margin: 0 auto 0 6%;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .social .social_button .social_vk {
+    background: #003d99 url(../img/social_icons_480.jpg) -80px -14px no-repeat;
+    border-radius: 41px;
+  }
+  .social .social_button .social_tw {
+    background: #003d99 url(../img/social_icons_480.jpg) -206px -12px no-repeat;
+    border-radius: 41px;
+  }
+  .social .social_button .social_fb {
+    background: #003d99 url(../img/social_icons_480.jpg) -142px -14px no-repeat;
+    border-radius: 41px;
+  }
+  .social .social_button .social_inst {
+    background: #003d99 url(../img/social_icons_480.jpg) -333px -14px no-repeat;
+    border-radius: 41px;
+  }
+  .social .social_button .social_yout {
+    background: #003d99 url(../img/social_icons_480.jpg) -206px -79px no-repeat;
+    border-radius: 41px;
+  }
+  .social_vk,
+  .social_tw,
+  .social_fb,
+  .social_inst,
+  .social_yout {
+    display: block;
+    width: 41px;
+    height: 41px;
+    margin: 0;
+    padding: 0;
+  }
+/*Обратная связь*/
+.feedback {
+  width: 90%;
+  height: auto;
+  margin: 28px auto 0px auto;
+  }
+  .feedback .feedback_vk {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+  .feedback .feedback_vk input {
+    height: 40px;
+    width: 65%;
+    margin: 0 17.5%;
+    border: solid 3px white;
+    border-radius: 30px;
+    background-color: #003d99;
+    color: white;
+    font-size: 5vw;
+    cursor: pointer;
+  }
+  .feedback .feedback_name {
+    width: 100%;
+    color: #3385ff;
+    font-size: 3.8vw;
+    margin-top: 3px;
+  }
+  .feedback .feedback_name p:first-child {
+    margin: 0;
+    text-align: center;
+  }
+  .feedback .feedback_name p:nth-child(2) {
+    margin: 0;
+    text-align: center;
+  }
