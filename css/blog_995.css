@@ -134,6 +134,14 @@ Header
 /*----------------------------------
 --------------Images----------------
 ----------------------------------*/
+#d18072019 .img{
+  width: 320px;
+  height: 341px;
+  margin: 0 auto;
+  background: url(../img/blog/anketa.jpg);
+  background-size: cover;
+  border: solid 1px #d7d7d7;
+}
 #d08072019 .img{
   width: 300px;
   height: 108px;
@@ -199,7 +207,8 @@ Header
   height: auto;
   margin: 10px 0 5px 0;
 }
-.content>a{
+.content>a,
+#d18072019 .content p:nth-child(2) a:hover{
   text-decoration: none;
 }
 .content>a h5{
@@ -222,3 +231,121 @@ Header
   color: black;
   font-style: italic;
 }
+ /*Начало подвала*/
+  .footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: #003d99;
+  }
+/*Название подвала*/
+.footer_name {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 5.6001px;
+  padding: 0;
+  }
+  .footer_name h4 {
+    font-size: 1.875rem;
+    color: #3385ff;
+    margin: 0;
+    text-align: center;
+  }
+  .footer_name p {
+    font-size: 0.75rem;
+    color: #3385ff;
+    margin: 0;
+    text-align: center;
+  }
+/*Социальные сети*/
+.social {
+  width: 80%;
+  height: auto;
+  padding: 0;
+  margin: 0 auto;
+  margin-top: 28px;
+  text-align: center;
+  }
+  .social p {
+    color: white;
+    font-size: 1.40625rem;
+    margin: 0;
+  }
+  .social .social_button {
+    display: flex;
+    width: 37%;
+    height: auto;
+    padding: 0;
+    margin: 0 0 0 32%;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .social .social_button .social_vk {
+    background: #003d99 url(../img/social_icons_480.jpg) -80px -14px no-repeat;
+    border-radius: 41px;
+  }
+  .social .social_button .social_tw {
+    background: #003d99 url(../img/social_icons_480.jpg) -206px -12px no-repeat;
+    border-radius: 41px;
+  }
+  .social .social_button .social_fb {
+    background: #003d99 url(../img/social_icons_480.jpg) -142px -14px no-repeat;
+    border-radius: 41px;
+  }
+  .social .social_button .social_inst {
+    background: #003d99 url(../img/social_icons_480.jpg) -333px -14px no-repeat;
+    border-radius: 41px;
+  }
+  .social .social_button .social_yout {
+    background: #003d99 url(../img/social_icons_480.jpg) -206px -79px no-repeat;
+    border-radius: 41px;
+  }
+  .social_vk,
+  .social_tw,
+  .social_fb,
+  .social_inst,
+  .social_yout {
+    display: block;
+    width: 41px;
+    height: 41px;
+    margin: 0;
+    padding: 0;
+  }
+/*Обратная связь*/
+.feedback {
+  width: 90%;
+  height: auto;
+  margin: 28px auto 0px auto;
+  }
+  .feedback .feedback_vk {
+    width: 20.8%;
+    height: auto;
+    margin: 0 auto;
+  }
+  .feedback .feedback_vk input {
+    height: 40px;
+    border: solid 3px white;
+    border-radius: 30px;
+    background-color: #003d99;
+    color: white;
+    font-size: 1.40625rem;
+  }
+  .feedback .feedback_vk input:hover {
+    cursor: pointer;
+  }
+  .feedback .feedback_name {
+    width: 100%;
+    color: #3385ff;
+    font-size: 1rem;
+    margin-top: 3px;
+  }
+  .feedback .feedback_name p:first-child {
+    margin: 0;
+    text-align: center;
+  }
+  .feedback .feedback_name p:nth-child(2) {
+    margin: 0;
+    text-align: center;
+  }
