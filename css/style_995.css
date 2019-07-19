@@ -200,16 +200,22 @@ nav {
     width: 100%;
     height: 100%;
   }
-  .portfolio .site:nth-child(2) .foto a div {
+  #agency .foto a div {
     width: 100%;
     height: 100%;
     background: url(../img/Common_view_of_site_Agency.jpg);
     background-size: cover;
   }
-  .portfolio .site:last-child .foto a div {
+  #aditu .foto a div {
     width: 100%;
     height: 100%;
     background: url(../img/Common_view_of_site_Aditu.jpg);
+    background-size: cover;
+  }
+  #anketa .foto a div {
+    width: 100%;
+    height: 100%;
+    background: url(../img/anketa.jpg);
     background-size: cover;
   }
   .portfolio .site .text {
@@ -224,11 +230,14 @@ nav {
     text-align: center;
     margin-bottom: 35px;
   }
-  .portfolio .site:first-child .text h6{
+  #mainSite .text h6{
     margin-bottom: 17px;
   }
-  .portfolio .site:last-child .text h6{
+  #aditu .text h6{
     margin-bottom: 7px;
+  }
+  #anketa .text h6{
+    margin-bottom: 2px;
   }
   .portfolio .site .text h6 a {
     text-decoration: none;
@@ -237,6 +246,10 @@ nav {
     font-size: 0.75rem;
     line-height: 1.5;
     text-align: center;
+  }
+  #anketa .text p{
+    text-align: justify;
+    text-indent: 20px;
   }
   /*Начало подвала*/
   .footer {

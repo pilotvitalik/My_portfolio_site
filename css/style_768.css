@@ -207,10 +207,10 @@ nav {
     text-align: center;
     margin-bottom: 35px;
   }
-  .portfolio .site:first-child .text h6{
+  #mainSite .text h6{
     margin-bottom: 17px;
   }
-  .portfolio .site:last-child .text h6{
+  #aditu .text h6{
     margin-bottom: 7px;
   }
   .portfolio .site .text h6 a {
@@ -310,7 +310,7 @@ nav {
   margin: 28px auto 0px auto;
   }
   .feedback .feedback_vk {
-    width: 20.8%;
+    width: 240px;
     height: auto;
     margin: 0 auto;
   }
@@ -383,16 +383,22 @@ nav {
     height: 300px;
     margin-bottom: 3px;
   }
-  .portfolio .site:nth-child(2) .foto a div {
+  #agency .foto a div {
     width: 100%;
     height: 100%;
     background: url(../img/Common_view_of_site_Agency.jpg);
     background-size: cover;
   }
-  .portfolio .site:last-child .foto a div {
+  #aditu .foto a div {
     width: 100%;
     height: 100%;
     background: url(../img/Common_view_of_site_Aditu.jpg);
+    background-size: cover;
+  }
+  #anketa .foto a div {
+    width: 100%;
+    height: 100%;
+    background: url(../img/anketa.jpg);
     background-size: cover;
   }
   .portfolio .site .text {
@@ -417,114 +423,4 @@ nav {
     width: 100%;
     height: auto;
     background-color: #003d99;
-  }
-/*Название подвала*/
-.footer_name {
-  width: 80%;
-  height: auto;
-  margin: 0 auto;
-  margin-top: 5.6001px;
-  padding: 0;
-  }
-  .footer_name h4 {
-    font-size: 1.546rem;
-    color: #3385ff;
-    margin: 0;
-    text-align: center;
-  }
-  .footer_name p {
-    font-size: 0.7734rem;
-    color: #3385ff;
-    margin: 0;
-    text-align: center;
-  }
-/*Социальные сети*/
-.social {
-  width: 80%;
-  height: auto;
-  padding: 0;
-  margin: 0 auto;
-  margin-top: 28px;
-  text-align: center;
-  }
-  .social p {
-    color: white;
-    font-size: 1.1601rem;
-    margin: 0;
-  }
-  .social .social_button {
-    display: flex;
-    width: 90%;
-    height: auto;
-    padding: 0;
-    margin: 0 auto 0 6%;
-    justify-content: space-around;
-    align-items: center;
-  }
-  .social .social_button .social_vk {
-    background: #003d99 url(../img/social_icons_480.jpg) -80px -14px no-repeat;
-    border-radius: 41px;
-  }
-  .social .social_button .social_tw {
-    background: #003d99 url(../img/social_icons_480.jpg) -206px -12px no-repeat;
-    border-radius: 41px;
-  }
-  .social .social_button .social_fb {
-    background: #003d99 url(../img/social_icons_480.jpg) -142px -14px no-repeat;
-    border-radius: 41px;
-  }
-  .social .social_button .social_inst {
-    background: #003d99 url(../img/social_icons_480.jpg) -333px -14px no-repeat;
-    border-radius: 41px;
-  }
-  .social .social_button .social_yout {
-    background: #003d99 url(../img/social_icons_480.jpg) -206px -79px no-repeat;
-    border-radius: 41px;
-  }
-  .social_vk,
-  .social_tw,
-  .social_fb,
-  .social_inst,
-  .social_yout {
-    display: block;
-    width: 41px;
-    height: 41px;
-    margin: 0;
-    padding: 0;
-  }
-/*Обратная связь*/
-.feedback {
-  width: 90%;
-  height: auto;
-  margin: 28px auto 0px auto;
-  }
-  .feedback .feedback_vk {
-    display: block;
-    width: 46.5%;
-    height: 35px;
-  }
-  .feedback .feedback_vk input {
-    display: block;
-    height: 33px;
-    margin: 0 auto;
-    border: solid 3px white;
-    border-radius: 24px;
-    background-color: #003d99;
-    color: white;
-    font-size: 1.1602rem;
-    cursor: pointer;
-  }
-  .feedback .feedback_name {
-    width: 100%;
-    color: #3385ff;
-    font-size: 1.1602rem;
-    margin-top: 3px;
-  }
-  .feedback .feedback_name p:first-child {
-    margin: 0;
-    text-align: center;
-  }
-  .feedback .feedback_name p:nth-child(2) {
-    margin: 0;
-    text-align: center;
   }
