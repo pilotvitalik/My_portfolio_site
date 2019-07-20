@@ -134,6 +134,13 @@ Header
 /*----------------------------------
 --------------Images----------------
 ----------------------------------*/
+ #d20072019 .img{
+  width: 107px;
+  height: 341px;
+  margin: 0 auto;
+  background: url(../img/portfolio/First_WP-min.jpg) no-repeat;
+  background-size: contain;
+}
 #d18072019 .img{
   width: 320px;
   height: 341px;

@@ -174,13 +174,17 @@ nav {
 .portfolio {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
+  position: relative;
   width: 100%;
   height: auto;
   margin: 0;
+  border: solid 1px red;
   }
   .portfolio .site {
     display: flex;
+    position: relative;
     flex-direction: column;
     width: 270px;
     height: auto;
@@ -218,6 +222,17 @@ nav {
     background: url(../img/anketa.jpg);
     background-size: cover;
   }
+  #firstWP{
+    margin-top: 50px;
+    margin-left: 0;
+    border: solid 1px red;
+  }
+  #firstWP .foto a div {
+    width: 100%;
+    height: 100%;
+    background: url(../img/portfolio/First_WP-min.jpg);
+    background-size: cover;
+  }
   .portfolio .site .text {
     width: 100%;
     height: 85px;
@@ -248,8 +263,11 @@ nav {
     text-align: center;
   }
   #anketa .text p{
+    display: inline-block;
     text-align: justify;
     text-indent: 20px;
+    position: relative;
+    border: solid 1px red;
   }
   /*Начало подвала*/
   .footer {
