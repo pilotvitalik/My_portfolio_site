@@ -3,9 +3,9 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 500px;
-  background-image: url("../img/header_992.jpg");
-  background-size: 100%;
+  height: 300px;
+  background-image: url("../img/header_768_1.jpg");
+  background-size: cover;
   align-items: center;
   justify-content: center;
   padding: 0;
@@ -13,13 +13,9 @@
   .header h2 {
     color: white;
     margin: 0;
-    font-size: 3.3rem;
-    margin-bottom: 30px;
   }
   .header p {
     color: white;
-    font-size: 1.23rem;
-    text-align: center;
   }
 /*Раздел навигации*/
 nav {
@@ -154,52 +150,73 @@ nav {
   }
 /*Основной раздел*/
 .common {
-  display: flex;
-  flex-direction: column;
   width: 100%;
   height: auto;
-  padding-bottom: 30px;
+  text-align: center;
   }
   .common h4 {
     font-size: 1.875rem;
     color: blue;
     margin-top: 9.333333333px;
-    text-align: center;
   }
 .portfolio {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  width: 100%;
+  flex-direction: column;
+  width: 70%;
   height: auto;
-  margin: 0;
+  margin: 0 auto;
   }
-  .portfolio .site {
+  .portfolio .string .site {
     display: flex;
     flex-direction: column;
-    width: 270px;
+    width: 100%;
     height: auto;
   }
-  .portfolio .site .foto {
+  .portfolio .string .site .foto {
     width: 100%;
-    height: 230px;
+    height: 300px;
     margin-bottom: 3px;
     cursor: pointer;
   }
-  .portfolio .site .foto a {
+  .portfolio .string .site .foto a {
     width: 100%;
     height: 100%;
     padding: 0;
   }
-  .portfolio .site .foto img {
+  .portfolio .string .site .foto img {
     width: 100%;
     height: 100%;
   }
-  .portfolio .site .text {
+  #agency .foto a div {
     width: 100%;
-    height: 85px;
+    height: 100%;
+    background: url(../img/Common_view_of_site_Agency.jpg);
+    background-size: cover;
   }
-  .portfolio .site .text h6 {
+  #aditu .foto a div {
+    width: 100%;
+    height: 100%;
+    background: url(../img/Common_view_of_site_Aditu.jpg);
+    background-size: cover;
+  }
+  #anketa .foto a div {
+    width: 100%;
+    height: 100%;
+    background: url(../img/anketa.jpg);
+    background-size: cover;
+  }
+  #firstWP .foto a div {
+    width: 100%;
+    height: 100%;
+    background: url(../img/portfolio/First_WP-min.jpg);
+    margin: 0;
+    background-size: cover;
+  }
+  .string .site .text {
+    width: 100%;
+    height: 65px;
+  }
+  .string .site .text h6 {
     font-size: 1.40625rem;
     line-height: 1.25;
     margin-bottom: 3.7334px;
@@ -213,13 +230,14 @@ nav {
   #aditu .text h6{
     margin-bottom: 7px;
   }
+  .portfolio .string .site .text h6:hover{
+    cursor: pointer;
+  }
   .portfolio .site .text h6 a {
     text-decoration: none;
   }
   .portfolio .site .text p {
-    font-size: 0.75rem;
-    line-height: 1.5;
-    text-align: center;
+    display: none;
   }
   /*Начало подвала*/
   .footer {
@@ -338,89 +356,4 @@ nav {
   .feedback .feedback_name p:nth-child(2) {
     margin: 0;
     text-align: center;
-  }
-.header {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 300px;
-  background-image: url("../img/header_768_1.jpg");
-  background-size: cover;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  }
-  .header h2 {
-    color: white;
-    margin: 0;
-  }
-  .header p {
-    color: white;
-  }
-.common {
-  width: 100%;
-  height: auto;
-  text-align: center;
-  }
-  .common h4 {
-    font-size: 1.875rem;
-    color: blue;
-    margin-top: 9.333333333px;
-  }
-.portfolio {
-  display: flex;
-  flex-direction: column;
-  width: 70%;
-  height: auto;
-  margin: 0 auto;
-  }
-  .portfolio .site {
-    width: 100%;
-    height: auto;
-  }
-  .portfolio .site .foto {
-    width: 100%;
-    height: 300px;
-    margin-bottom: 3px;
-  }
-  #agency .foto a div {
-    width: 100%;
-    height: 100%;
-    background: url(../img/Common_view_of_site_Agency.jpg);
-    background-size: cover;
-  }
-  #aditu .foto a div {
-    width: 100%;
-    height: 100%;
-    background: url(../img/Common_view_of_site_Aditu.jpg);
-    background-size: cover;
-  }
-  #anketa .foto a div {
-    width: 100%;
-    height: 100%;
-    background: url(../img/anketa.jpg);
-    background-size: cover;
-  }
-  .portfolio .site .text {
-    width: 100%;
-    height: 65px;
-  }
-  .portfolio .site .text h6 {
-    font-size: 1.40625rem;
-    line-height: 1.25;
-    margin-bottom: 3.7334px;
-  }
-  .portfolio .site .text h6:hover{
-    cursor: pointer;
-  }
-  .portfolio .site .text p {
-    display: none;
-  }
-  /*Начало подвала*/
-  .footer {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    background-color: #003d99;
   }
