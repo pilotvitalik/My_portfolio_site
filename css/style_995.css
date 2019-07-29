@@ -194,7 +194,7 @@ nav {
     position: relative;
     flex-direction: column;
     width: 270px;
-    height: auto;
+    height: 100%;
     margin: 0;
   }
   .string .site .foto {
@@ -202,9 +202,6 @@ nav {
     height: 230px;
     margin-bottom: 3px;
     cursor: pointer;
-  }
-  #firstWP .foto{
-    height: 250px;
   }
   .string .site .foto a {
     width: 100%;
@@ -233,26 +230,28 @@ nav {
     background: url(../img/anketa.jpg);
     background-size: cover;
   }
-  #firstWP{
-    right: 506px;
-  }
   #firstWP .foto a div {
     width: 100%;
     height: 100%;
     background: url(../img/portfolio/First_WP-min.jpg);
     background-size: cover;
   }
+  #guestBook .foto a div {
+    width: 100%;
+    height: 100%;
+    background: url(../img/portfolio/chat.jpg);
+    background-size: cover;
+  }
   .string .site .text {
     width: 100%;
-    height: auto;
+    height: 100%;
   }
   .string .site .text h6 {
     font-size: 1.40625rem;
     line-height: 1.25;
-    margin-bottom: 3.7334px;
+    margin-bottom: 35px;
     cursor: pointer;
     text-align: center;
-    margin-bottom: 35px;
   }
   #mainSite .text h6{
     margin-bottom: 17px;
@@ -262,23 +261,29 @@ nav {
   }
   #anketa .text h6{
     margin-bottom: 2px;
+    margin: 0;
   }
   #firstWP .text h6{
-    margin: 30px 0 0 0;
+    margin: 0 0 0 0;
   }
   .string .site .text h6 a {
     text-decoration: none;
   }
   .string .site .text p {
     font-size: 0.75rem;
-    line-height: 1.5;
+    height: auto;
     text-align: center;
   }
   #anketa .text p{
     display: inline-block;
+    position: absolute;
     text-align: justify;
-    text-indent: 20px;
-    position: relative;
+  }
+  #agency{
+    margin: 0 auto 0 34px;
+  }
+  #mainSite{
+    margin: 0 709px 0 0;
   }
   /*Начало подвала*/
   .footer {

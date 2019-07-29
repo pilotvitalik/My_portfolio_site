@@ -134,6 +134,13 @@ Header
 /*----------------------------------
 --------------Images----------------
 ----------------------------------*/
+ #d28072019 .img{
+  width: 300px;
+  height: 220px;
+  margin: 0 auto;
+  background: url(../img/portfolio/chat.jpg) no-repeat;
+  background-size: contain;
+}
  #d20072019 .img{
   width: 107px;
   height: 341px;

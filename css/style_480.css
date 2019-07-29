@@ -185,6 +185,12 @@ nav {
     background: url(../img/portfolio/First_WP-min.jpg);
     background-size: cover;
   }
+  #guestBook .foto a div{
+    width: 100%;
+    height: 80%;
+    background: url(../img/portfolio/chat.jpg);
+    background-size: cover;
+  }
   .string .site .text {
     display: none;
     width: 100%;
