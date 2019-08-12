@@ -246,6 +246,12 @@ nav {
     background: url(../img/portfolio/repair_wine_cases-760.jpg) no-repeat;
     background-size: 100%;
   }
+  #webim .foto a div {
+    width: 100%;
+    height: 100%;
+    background: url(../img/portfolio/webim.jpg) no-repeat;
+    background-size: 100%;
+  }
   .string .site .text {
     width: 100%;
     height: 100%;
@@ -274,9 +280,9 @@ nav {
     text-decoration: none;
   }
   #repWinCas .text h6:last-child {
-    font-size: 1rem;
+    font-size: 0.9rem;
     margin-top: -50px;
-    color: #077bff;
+    color: #212529;
     cursor: default;
   }
   .string .site .text p {
@@ -288,15 +294,6 @@ nav {
     display: inline-block;
     position: absolute;
     text-align: justify;
-  }
-  #aditu{
-    margin: 0 0 0 0px;
-  }
-  #agency{
-    margin: 0 0 0 1px;
-  }
-  #mainSite{
-    margin: 0 338px 0 0;
   }
   /*Начало подвала*/
   .footer {

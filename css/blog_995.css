@@ -57,7 +57,7 @@ Header
     position: relative;
     width: 802px;
     height: auto;
-    top: 134px;
+    top: 124px;
   }
     .header__nav_menu{
     display: flex;
@@ -69,9 +69,9 @@ Header
     margin: 0 auto;
     list-style-type: none;
   }
-  .header__nav_menu>a{
+  .header__nav_menu>li{
     padding: 5px;
-    text-decoration: none;
+    /* border: solid 1px red; */
   }
   .header__nav_menu--yellow--active{
     background: #FFBF00;
@@ -85,14 +85,17 @@ Header
   .header__nav_menu>a:hover{
     cursor: pointer;
   }
-  .header__nav_menu a li{
+  .header__nav_menu>li a{
     font-size: 18.5px;
     color: white;
     text-decoration: none;
     outline: none;
+    /* border: solid 1px red; */
   }
   .noactive{
     opacity: 0.5;
+  }
+  .noactive a{
     cursor: default;
   }
   .header__nav_menu_point_under{
@@ -104,11 +107,15 @@ Header
     left: 111px;
     list-style-type: none;
     padding: 5px;
+    color: ;
+    z-index: 1111;
+    background: blue;
+    border-radius: 10px;
   }
-  .header__nav_menu_point_under a{
+  .header__nav_menu_point_under li a{
     text-decoration: none;
   }
-  .header__nav_menu_point_under a li{
+  .header__nav_menu_point_under>li{
     width: 100%;
     padding: 2.5px 0;
     color: blue;
@@ -134,6 +141,13 @@ Header
 /*----------------------------------
 --------------Images----------------
 ----------------------------------*/
+#d11082019 .img{
+  width: 300px;
+  height: 220px;
+  margin: 0 auto;
+  background: url(../img/portfolio/webim.jpg) no-repeat;
+  background-size: contain;
+} 
 #d04082019 .img{
   width: 300px;
   height: 220px;
